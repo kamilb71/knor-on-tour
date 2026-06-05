@@ -789,7 +789,7 @@ function update(){
   if(beerFlood){
     floodTimer++;
     // FINAŁ: 15 sekund ucieczki w górę przez powódź piwną
-    const ESCAPE_FRAMES=DIFF==='hard'?1125:1575; // CIOTA, HARDCORE
+    const ESCAPE_FRAMES=DIFF==='hard'?1300:1700; // CIOTA, HARDCORE
     const prog=Math.min(floodTimer/ESCAPE_FRAMES,1);
     floodY=GH+200-(GH+2550)*prog;
     const WW=lvlCfg(lv).WW;
